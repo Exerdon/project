@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #00c6ff, #0072ff);
+  }
+  h1{
+    color: black;
+  }
+  
+  /* login box */
+  .login-card {
+    width: 300px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    z-index: 2;
+    position: relative;
+    transition: 0.1s ease;
+  }
+  
+  /* Inputs */
+  .inp {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.2s ease;
+  }
+  
+  /* float input up when focused */
+  .inp:focus {}
+  
+  /* Button */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Overlay blur */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(60px);
+    background: rgba(0,0,0,0);
+    transition: 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* When active blur */
+  .overlay.active {
+    backdrop-filter: blur(6px);
+    background: rgba(0,0,0,0.2);
+    pointer-events: auto;
+  }
+  
